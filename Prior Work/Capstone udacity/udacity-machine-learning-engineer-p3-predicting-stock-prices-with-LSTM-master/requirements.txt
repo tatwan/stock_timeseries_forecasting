@@ -1,0 +1,6 @@
+alpha_vantage
+pandas
+numpy
+tensorflow
+matplotlib
+sklearn
