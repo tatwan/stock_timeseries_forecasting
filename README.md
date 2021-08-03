@@ -1,5 +1,9 @@
 # Stock Market Prediction Capstone
 
+## Capstone Project Proposal Review Link
+
+* https://review.udacity.com/#!/reviews/3019029
+
 ## Submission Files
 
 > All files are in the main repo directory
