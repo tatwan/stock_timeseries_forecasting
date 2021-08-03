@@ -30,7 +30,7 @@ Can statistical models and machine learning predict future stock prices? The pro
 
 ## Datasets and Inputs
 
-I will use an API to pull stock data, more specifically Pandas DataReader. The data contains daily stock prices in the form of opening price, closing price, adjusted closing price, high trading price of the day, low trading price of the day, and volume. 
+I will use an API to pull stock data, more specifically Pandas DataReader or AlphaVantage. The data contains daily stock prices in the form of opening price, closing price, adjusted closing price, high trading price of the day, low trading price of the day, and volume. 
 
 The datasets will cover data from 2016-2021 split into training and testing. Training from 2016-2019 to predict 2020, then another round including 2020 in the training to predict 2021.
 
@@ -57,7 +57,6 @@ Ideally, I will train on time slices like 2016-2019 (maybe extend to 2020), then
 * Root Mean Square Error (RMSE)
 * R Squared
 * and Mean Absolute Percentage Error (MAPE)
-* Forecast Skill (SS)
 
 ## Complexity
 
@@ -73,12 +72,11 @@ For stock market prediction/forecasting I will use:
 
 Models that I expect to test:
 
-* Time Series: ARMA, ARIMA, and GARCH
-* ML: Random Forest and other ensemble tree-based regressors 
-* DL: A RNN/LSTM for Time Series data
-* Finally test Facebook Prophet library as a forecasting tool 
+* Time Series: ARIMA, VAR
+* ML: Facebook Prophet with an added linear part (a General Additive Model GAM )  
+* DL: An LSTM for Time Series data
 
 ## Model Deployment
 
-I will deploy the selected model using Streamlit so users can interact and pick a stock (symbol) and then have the model create predict future prices (1 week or 2 week look ahead forecast). 
+I would like to test and deploy the selected model using Streamlit so users can interact and pick a stock (symbol) and then have the model create predict future prices (1 week or 2 week look ahead forecast). 
 
